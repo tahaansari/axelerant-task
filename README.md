@@ -19,7 +19,7 @@ PING ME IF YOU FACE ANY ISSUES ON THE ABOVE THING.
 
 - Name - Taha Ansari
 - Mob - 8976321674
-- Email - taha.ansari@gmail.com
+- Email - taha.m.ansari@gmail.com
 
 
 
