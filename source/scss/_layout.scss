@@ -1,0 +1,58 @@
+// for columns
+.l-col-1{grid-template-columns: 1fr}
+.l-col-2{grid-template-columns: 1fr 1fr}
+.l-col-3{grid-template-columns: 1fr 1fr 1fr}
+
+// for text
+.text-left{text-align: left}
+.text-center{text-align: center}
+.text-right{text-align: right}
+
+// for flex
+.l-flex{display: flex}
+.flex-middle{align-items: center} // vertically align flex items to middle
+.flex-push-left{ justify-content: flex-start} // push flex items to left
+.flex-center{ justify-content: center} // flex items to center
+.flex-push-right{ justify-content: flex-end} // push flex items to right
+
+.flex-middle-center{align-items: center; justify-content: center} // vertically & horizintally align flex items to middle
+
+// for grid
+.l-grid{display: grid}
+.grid-middle{align-items: center} // vertically align grid items to middle
+.grid-push-left{ justify-content: start} // push grid items to left
+.grid-center{ justify-content: center} // grid items to center
+.grid-push-right{ justify-content: end} // push grid items to right
+
+// padding-left: 15px; padding-right: 15px;
+section{
+    padding-top:80px;
+    padding-bottom: 80px; 
+    @media(max-width:992px){ 
+        padding-top:50px;
+        padding-bottom:50px; 
+    }
+}
+
+
+
+.l-container{max-width: 1230px; margin: auto; padding-left:15px; padding-right: 15px;}
+
+.color-box{
+    margin: 0 10px;
+    text-align: center;
+    &__color{
+        width:50px;
+        height: 50px;
+        margin: auto;
+        border-radius: 50%;
+        background-color: #cccccc;
+        margin-bottom: 10px;
+    }
+    &--orange{
+        background-color: $brand-orange;
+    }
+    &--black{
+        background-color: $brand-black;
+    }
+}

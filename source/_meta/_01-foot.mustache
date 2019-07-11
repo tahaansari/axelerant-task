@@ -1,0 +1,46 @@
+  
+  <!--DO NOT REMOVE-->
+  {{{ patternLabFoot }}}
+  
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $(document).ready(function(){
+
+        $('input,textarea').focus(function(){
+          console.log('focused');
+          $(this).next().addClass('inputs__active');
+        })
+
+        $('input,textarea').focusout(function(){
+          console.log('focus out');
+          // $(this).next().addClass('inputs__active'); 
+          // console.log($(this).val());
+          if($(this).val() == ""){
+            $(this).next().removeClass('inputs__active');
+          }
+        })
+
+      })
+
+      var lst = 0;
+      $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        // console.log('scrolling... '+st)
+        if(st>lst){
+          // console.log('scrolling down');
+          $('header').addClass('header--fixed-header');
+        }else{
+          // console.log('scrolling up');
+          $('header').removeClass('header--fixed-header');
+        }
+        lst = st;
+      })
+      
+  </script>
+
+  </body>
+</html>
