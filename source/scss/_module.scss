@@ -135,7 +135,7 @@
         color: #a79d9a;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 12px;
+        font-size: 10px;
         transition: 0.2s ease-out;
         pointer-events: none;
     }
@@ -284,6 +284,17 @@
                 border-left: 25px solid transparent;
                 top: 99%;
                 left: 40px;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                border-top: 22px solid #c5c5c5;
+                border-right: 11px solid transparent;
+                border-bottom: 24px solid transparent;
+                border-left: 28px solid transparent;
+                top: 100%;
+                left: 37px;
+                z-index: -1;
             }
         }
         &__desc{
