@@ -1,6 +1,6 @@
 # Development
 - Have made components as per Atomic Design(Pattern Lab)
-- Have broken SACC into partials that you can find in the SCSS directory
+- Have broken SCSS into partials that you can find in the SCSS directory
 - Have used SMACSS and BEM for naming classes
 - Have used CSS GRID and FLEX for making layouts
 
